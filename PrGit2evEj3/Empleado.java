@@ -45,5 +45,9 @@ public class Empleado {
     public Empleado(String nombre) {
         this.nombre = nombre;
     }
-void incrimentarEdad(){ edad+1;}
+void incrementarEdad(){ edad+1;}
+}
+void incrementarSueldo(int porcentajeIncremento)
+{
+    this.sueldo +=sueldo*(1+porcentajeIncremento/100.0);
 }
