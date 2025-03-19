@@ -45,4 +45,5 @@ public class Empleado {
     public Empleado(String nombre) {
         this.nombre = nombre;
     }
+void incrimentarEdad(){ edad+1;}
 }
