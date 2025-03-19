@@ -43,9 +43,7 @@ public class Departamento {
         this.empleados = empleados;
     }
 
-    public Departamento(String nombre) {
-        this.nombre = nombre;
-    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -53,6 +51,10 @@ public class Departamento {
         if (o == null || getClass() != o.getClass()) return false;
         Departamento that = (Departamento) o;
         return numEmpleados == that.numEmpleados && Objects.equals(nombre, that.nombre) && Arrays.equals(empleados, that.empleados);
+    }
+
+    public Departamento(String nombre) {
+        this.nombre = nombre;
     }
 
     @Override
@@ -71,9 +73,7 @@ public class Departamento {
                 '}';
     }
 
-    public Departamento() {
-        super();
-    }
+
     
 }
 
